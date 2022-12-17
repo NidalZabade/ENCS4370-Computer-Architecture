@@ -17,10 +17,20 @@ li $v0, 8
 syscall
 # Re-printing the filename to assure that we got it right.
 li $v0, 4
+
 syscall
+# replacing the newline character with null character.
+la $t1, filename
+li $t2, '\n'
+loop:
+lb $t4, 0($t1)
+add $t1, $t1, 1
+bne $t4, $t2, loop
+sb $zero, -1($t1) # -1 because we have incremented $t1 by 1 in the last step.
+
 # Reading From a file.
 li $v0, 13
-la $a0, file			# Here the problem is that we need to make "filename" null terminated
+la $a0, filename
 la $a1, 0
 la $a2, 0
 syscall
