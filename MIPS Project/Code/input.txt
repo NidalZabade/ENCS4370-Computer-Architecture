@@ -1,0 +1,3 @@
+Hello, this is a testing paragraph to see how much are we going in our project.
+lets add some special characters like $(21)41)*^ and combine them with words.
+for example! this$ a@and This@ how ar0 we going to s0lve 1t.
