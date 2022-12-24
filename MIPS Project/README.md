@@ -11,7 +11,7 @@ A MIPS program that does simple encryption/decryption algorithm based on Caesar 
 * [Nidal Zabade](https://github.com/NidalZabade) 1200153
 * [Mohammad Abu-Shelbaia](https://github.com/mabushelbaia) 1200198
 
-## [Code](https://github.com/NidalZabade/ENCS4370-Computer-Architecture/tree/main/Arc%20Project/Code)
+## [Code](https://github.com/NidalZabade/ENCS4370-Computer-Architecture/tree/main/MIPS%20Project/Code)
 
 ### Clean text method
 ```
