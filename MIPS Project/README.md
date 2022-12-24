@@ -13,14 +13,35 @@ A MIPS program that does simple encryption/decryption algorithm based on Caesar 
 
 ## [Code](https://github.com/NidalZabade/ENCS4370-Computer-Architecture/tree/main/Arc%20Project/Code)
 
+### Clean text method
+```
+read_pointer
+write_pointer
+string s;
+max = 0
+counter = 0
+while s[read_pointer] != null:
+  if s[read_pointer].isalpha():
+    s[write_pointer] = s[read_pointer] or 32
+    read_pointer++
+    write_pointer++
+    counter++
+  else if s[read_pointer] == " ":
+    max = max(max, counter)
+    counter = 0
+    s[write_pointer] = s[read_pointer]
+    write_pointer++
+    read_pointer++
+  else:    # special charachter
+    read_pointer++
+```
 
 ## Todo
-- [ ] Read from a text file
-- [ ] Write into a text file
-- [ ] Max length function
-- [ ] Remova non-alpha char
-- [ ] Caesar cipher function
-- [ ] report
+- [x] Read from a text file
+- [x] Write into a text file
+- [x] Max length function
+- [x] Remova non-alpha char
+- [x] Caesar cipher function
 - [ ] test-cases
 
 
