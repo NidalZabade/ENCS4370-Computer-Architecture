@@ -38,7 +38,7 @@ while s[read_pointer] != null:
 
 ## Todo
 - [x] Read from a text file
-- [x] Write into a text file
+- [ ] Write into a text file
 - [x] Max length function
 - [x] Remova non-alpha char
 - [x] Caesar cipher function
